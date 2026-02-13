@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8009:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - DB_HOST=51.68.44.166
+      - DB_USER=root
+      - DB_PASS=Lavisione@2025
+      - DB_NAME=vote_db
